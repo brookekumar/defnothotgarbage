@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Def Not Hot Garbage</title>
@@ -11,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
 
   <div class="container">
@@ -19,8 +17,7 @@
       <h1>Definitely NOT Hot Garbage</h1>
       <h3>We only have 5 tables! Book your seat before they all are gone!</h3>
       <hr>
-      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View
-          Tables</button></a>
+      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Tables</button></a>
       <a href="/"><button class="btn btn-lg btn-blue"><span class="fa fa-home"></span> Home</button></a>
     </div>
     <div class="row">
@@ -40,8 +37,8 @@
               </div>
 
               <div class="form-group">
-                <label for="role">Email</label>
-                <input type="text" class="form-control" id="role">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email">
               </div>
 
               <div class="form-group">
@@ -49,19 +46,23 @@
                 <input type="text" class="form-control" id="age">
               </div>
 
+              <div class="form-group">
+                    <label for="id">Unique ID</label>
+                    <input type="text" class="form-control" id="uniqueid">
+                  </div>
+
             </form>
             <br>
             <div class="text-left">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span
-                  class="fa fa-fire"></span>Submit</button>
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>Submit</button>
             </div>
           </div>
         </div>
-        <div class="container">
-          <a href="/api/tables">API Table Link</a>
-          |
-          <a href="/api/waitlist">API Wait List</a>
-        </div>
+        <div class ="container">
+                <a href="/api/tables">API Table Link</a>
+                 | 
+                <a href="/api/waitlist">API Wait List</a>
+            </div>   
       </div>
     </div>
   </div>
@@ -69,5 +70,4 @@
   <script src="js/add.js"></script>
 
 </body>
-
 </html>

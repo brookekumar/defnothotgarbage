@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars - Express</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <img src="">
+      <h1>Definitely NOT Hot Garbage</h1>
+      <hr>
+      <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Make Reservation</button></a>
+      <a href="/"><button class="btn btn-lg btn-blue"><span class="fa fa-home"></span> Home</button></a>
+    </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><strong>Current Reservations</strong></h3>
+          </div>
+          <div class="card-body">
+            <h2 id="routeName">Table #1</h2>
+            <hr>
+            <div id="stats">
+              <h3><strong>ID:</strong> <span id="uniqueid">1</span></h3>
+              <h3><strong>Name:</strong> <span id="name">Zordon</span></h3>
+              <h3><strong>Email:</strong> <span id="email">zordon@email.com</span></h3>
+              <h3><strong>Phone:</strong> <span id="phone">111-111-1111</span></h3>
+            </div>
+          </div>
+        </div>
+<br />
+        <div class="card">
+                <div class="card-header">
+                  <h3><strong>Waiting List</strong></h3>
+                </div>
+                <div class="card-body">
+                  <h2 id="routeName">Table #1</h2>
+                  <hr>
+                  <div id="stats">
+                    <h3><strong>ID:</strong> <span id="uniqueid"></span></h3>
+                    <h3><strong>Name:</strong> <span id="name"></span></h3>
+                    <h3><strong>Email:</strong> <span id="email"></span></h3>
+                    <h3><strong>Phone:</strong> <span id="phone"></span></h3>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/view.js"></script>
+</body>
+
+</html>
