@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Star Wars - Express</title>
+  <title>Def Not Hot Garbage</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,10 +14,11 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Star Wars Express</h1>
-      <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+      <h1>Definitely NOT Hot Garbage</h1>
+      <h3>We only have 5 tables! Book your seat before they all are gone!</h3>
       <hr>
-      <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Characters</button></a>
+      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Tables</button></a>
+      <a href="/"><button class="btn btn-lg btn-blue"><span class="fa fa-home"></span> Home</button></a>
     </div>
     <div class="row">
 
@@ -25,7 +26,7 @@
 
         <div class="card">
           <div class="card-header">
-            <h3><strong>Add Characters</strong></h3>
+            <h3><strong>Make Reservation</strong></h3>
           </div>
           <div class="card-body">
             <form method="POST" role="form">
@@ -36,28 +37,27 @@
               </div>
 
               <div class="form-group">
-                <label for="role">Role</label>
+                <label for="role">Email</label>
                 <input type="text" class="form-control" id="role">
               </div>
 
               <div class="form-group">
-                <label for="age">Age</label>
+                <label for="age">Phone</label>
                 <input type="text" class="form-control" id="age">
-              </div>
-
-              <div class="form-group">
-                <label for="force-points">Force Points</label>
-                <input type="text" class="form-control" id="force-points">
               </div>
 
             </form>
             <br>
-            <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Add to the Force</button>
+            <div class="text-left">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>Submit</button>
             </div>
           </div>
         </div>
-
+        <div class ="container">
+                <a href="/api/tables">API Table Link</a>
+                 | 
+                <a href="/api/waitlist">API Wait List</a>
+            </div>   
       </div>
     </div>
   </div>
